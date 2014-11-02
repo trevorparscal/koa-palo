@@ -1,0 +1,37 @@
+{
+	"name": "koa-palo",
+	"version": "0.1.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/trevorparscal/koa-palo.git"
+	},
+	"main": "lib/index.js",
+	"scripts": {
+		"start": "DEBUG=koa* node --harmony lib",
+		"pretest": "DEBUG=koa* node --harmony `which gulp` pretest",
+		"test": "DEBUG=koa* NODE_ENV=testing node --harmony `which gulp` test"
+	},
+	"engines": {
+		"node": ">=0.11.9"
+	},
+	"dependencies": {
+		"co-fs": "^1.2.0",
+		"cssjanus": "^1.1.0",
+		"koa": "^0.8.0",
+		"koa-compose": "^2.3.0",
+		"koa-error": "^1.1.2",
+		"koa-gzip": "^0.1.0",
+		"koa-logger": "^1.2.2",
+		"koa-redis-cache": "^0.4.0",
+		"koa-route": "^2.1.0"
+	},
+	"devDependencies": {
+		"gulp": "^3.8.8",
+		"gulp-exit": "^0.0.2",
+		"gulp-jscs": "^1.1.2",
+		"gulp-jshint": "^1.8.5",
+		"gulp-mocha": "^1.1.0",
+		"jshint-stylish": "^1.0.0",
+		"supertest": "~0.13.0"
+	}
+}
